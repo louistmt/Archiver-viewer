@@ -24,5 +24,8 @@
   "homepage": "https://github.com/louistmt/Archiver-viewer#readme",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.4"
   }
 }
