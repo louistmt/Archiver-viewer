@@ -2,7 +2,7 @@
   "name": "archiver-viewer",
   "version": "0.0.1",
   "description": "A small webapp to view the chat history of a discord channel exported in json format",
-  "main": "index.mjs",
+  "main": "src/index.mjs",
   "scripts": {
     "test": "echo hello"
   },
