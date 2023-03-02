@@ -1,0 +1,24 @@
+{
+  "name": "archiver-viewer",
+  "version": "0.0.1",
+  "description": "A small webapp to view the chat history of a discord channel exported in json format",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louistmt/Archiver-viewer.git"
+  },
+  "keywords": [
+    "webapp",
+    "express",
+    "nodejs"
+  ],
+  "author": "louistmt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/louistmt/Archiver-viewer/issues"
+  },
+  "homepage": "https://github.com/louistmt/Archiver-viewer#readme"
+}
