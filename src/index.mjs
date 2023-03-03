@@ -1,9 +1,10 @@
 import { request } from "https"
 import express from "express"
+import { resolve } from "node:path"
 
 const PORT = 9090
 const app = express()
-const staticFilesPath = import.meta.url.replace("file:///", "").replace("src/index.mjs", "static/")
+const staticFilesPath = resolve("./static")
 
 app.set("title", "Archive Viewer")
 app.use("/static", express.static(staticFilesPath))
