@@ -30,4 +30,5 @@ app.get("/api/:channelId/:fileId/:fileName", (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`App is up at port ${PORT}`)
+    console.log(`Root path is ${staticFilesPath}`);
 })
