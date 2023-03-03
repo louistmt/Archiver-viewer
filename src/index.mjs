@@ -16,6 +16,12 @@ app.get("/api/:channelId/:fileId/:fileName", (req, res) => {
     const {channelId, fileId, fileName} = req.params;
     const cdnReq = request(`https://cdn.discordapp.com/attachments/${channelId}/${fileId}/${fileName}`);
     cdnReq.on("response", (cdnRes) => {
+        if (cdnRes.statusCode !== 200) {
+            res.status("404")
+            res.end()
+            cdnRes.destroy()
+            return
+        }
         res.type("application/json")
         cdnRes.pipe(res)
     });
